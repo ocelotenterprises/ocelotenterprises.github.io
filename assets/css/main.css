@@ -25,6 +25,31 @@ body {
   color: var(--color-default);
   overflow-x: hidden;
 }
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
 
 a {
   color: var(--color-primary);
