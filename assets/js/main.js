@@ -213,20 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.getElementById('shopInfoForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission to see the collected data
-
-  // Retrieve user inputs
-  const name = document.getElementById('name').value;
-  const address = document.getElementById('address').value;
-  const measurement = document.getElementById('measurement').value;
-  const color = document.getElementById('color').value;
-  const logo = document.getElementById('logo').value;
-
-  // Display collected information (you can customize this part)
-  alert(`Name: ${name}\nShop Address: ${address}\nShop Measurement: ${measurement} ft\nPreferred Color: ${color}\nLogo Available: ${logo}`);
-});
-
 
 // ... (previous JavaScript code) ...
 
