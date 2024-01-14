@@ -192,10 +192,6 @@
 
 });
 
-
-
-// ... (previous JavaScript code) ...
-
 function submitFormViaEmail() {
   const name = document.getElementById('name').value;
   const address = document.getElementById('address').value;
