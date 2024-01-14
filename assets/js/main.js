@@ -1,8 +1,4 @@
-
-   * Mobile nav toggle
-   */
-
-  const mobileNavShow = document.querySelector('.mobile-nav-show');
+const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
@@ -191,30 +187,6 @@
   });
 
 });
-
-function submitFormViaEmail() {
-  const name = document.getElementById('name').value;
-  const address = document.getElementById('address').value;
-  const measurement = document.getElementById('measurement').value;
-  const color = document.getElementById('color').value;
-  const logo = document.getElementById('logo').value;
-  const details = document.getElementById('details').value;
-
-  const subject = 'Shop Information Submission';
-  const body = `Name: ${name}\nShop Address: ${address}\nShop Measurement: ${measurement} ft\nPreferred Color: ${color}\nLogo Available: ${logo}\nAdditional Details: ${details}`;
-
-  const mailtoLink = `mailto:ocelotenterprises7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-  window.location.href = mailtoLink;
-
-} else if (method === 'whatsapp') {
-    // Creating a WhatsApp link
-    const whatsappNumber = '+2347048128511'; // Replace with the actual WhatsApp number
-    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.location.href = whatsappLink;
-  }
-}
-
 
 
 
