@@ -1,4 +1,28 @@
-const mobileNavShow = document.querySelector('.mobile-nav-show');
+/**
+* Template Name: UpConstruction
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
+* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
+
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
+
+  /**
+   * Mobile nav toggle
+   */
+
+  const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
@@ -187,11 +211,3 @@ const mobileNavShow = document.querySelector('.mobile-nav-show');
   });
 
 });
-
-
-
-
-
-
-
-  
