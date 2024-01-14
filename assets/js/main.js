@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ... (previous JavaScript code) ...
 
-function submitForm(method) {
+function submitFormViaEmail() {
   const name = document.getElementById('name').value;
   const address = document.getElementById('address').value;
   const measurement = document.getElementById('measurement').value;
@@ -224,23 +224,26 @@ function submitForm(method) {
   const logo = document.getElementById('logo').value;
   const details = document.getElementById('details').value;
 
-  const message = `Name: ${name}\nShop Address: ${address}\nShop Measurement: ${measurement} ft\nPreferred Color: ${color}\nLogo Available: ${logo}\nAdditional Details: ${details}`;
+  const subject = 'Shop Information Submission';
+  const body = `Name: ${name}\nShop Address: ${address}\nShop Measurement: ${measurement} ft\nPreferred Color: ${color}\nLogo Available: ${logo}\nAdditional Details: ${details}`;
 
-  if (method === 'email') {
-    // Using EmailJS to send an email
-    emailjs.send("default_service", "template_id", { 
-      to_email: "ocelotenterprises7@gmail.com", // Replace with the actual email destination
-      message: message 
-    })
-    .then(function(response) {
-      alert('Email sent successfully!');
-    }, function(error) {
-      alert('Failed to send email. Please try again later.');
-    });
-  } else if (method === 'whatsapp') {
+  const mailtoLink = `mailto:ocelotenterprises7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
+
+} else if (method === 'whatsapp') {
     // Creating a WhatsApp link
     const whatsappNumber = '+2347048128511'; // Replace with the actual WhatsApp number
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappLink;
   }
 }
+
+
+
+
+
+
+
+
+  
