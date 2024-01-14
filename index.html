@@ -142,13 +142,15 @@
       <option value="yes">Yes</option>
       <option value="no">No</option>
     </select>
-  <label for="details">Additional Details:</label>
-  <textarea id="details" name="details"></textarea>
+  <!-- ... (previous HTML code) ... -->
 
-  <button type="submit" onclick="submitForm('email')">Submit via Email</button>
-  <button type="button" onclick="submitForm('whatsapp')">Send via WhatsApp</button> 
+<label for="details">Additional Details:</label>
+<textarea id="details" name="details"></textarea>
 
-  </form>
+<button type="submit" onclick="submitForm('whatsapp')">Send via WhatsApp</button>
+<button type="button" onclick="submitFormViaEmail()">Submit via Email</button>
+
+<!-- ... (rest of the HTML code) ... -->
             </div>
           </div>
 
