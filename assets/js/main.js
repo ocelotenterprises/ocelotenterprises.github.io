@@ -247,3 +247,17 @@ function submitForm() {
     // Example using mailto link to send an email
     window.location.href = 'mailto:ocelotenterprises7@gmail.com?subject=New Signage Inquiry&body=' + encodeURIComponent(formData);
   }
+function contactWhatsApp() {
+    var name = document.getElementsByName("name")[0].value;
+    var phone = document.getElementsByName("phone")[0].value;
+    var message = document.getElementsByName("message")[0].value;
+
+    // Create a WhatsApp message with the collected information
+    var whatsappMessage = "Hi, I'm interested in signage. My details are:\nName: " + name + "\nPhone: " + phone + "\nMessage: " + message;
+
+    // Construct the WhatsApp link
+    var whatsappLink = 'https://wa.me/+2347048128511?text=' + encodeURIComponent(whatsappMessage);
+
+    // Open WhatsApp in a new tab/window
+    window.open(whatsappLink, '_blank');
+  }
