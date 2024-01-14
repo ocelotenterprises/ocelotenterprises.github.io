@@ -211,3 +211,39 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+function submitForm() {
+    var name = document.getElementsByName("name")[0].value;
+    var email = document.getElementsByName("email")[0].value;
+    var phone = document.getElementsByName("phone")[0].value;
+    var message = document.getElementsByName("message")[0].value;
+
+    var formData = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message;
+
+    // Use AJAX to send the form data to the server or email
+    // Replace the following line with your preferred method to send data to the server or email
+    sendFormDataToServer(formData);
+  }
+
+  function sendFormDataToServer(formData) {
+    // Use AJAX to send the form data to the server
+    // Example using fetch API
+    fetch('your_server_endpoint', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ formData: formData }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle the server response if needed
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+
+    // Alternatively, you can use other methods like sending an email or using a messaging service
+    // Example using mailto link to send an email
+    window.location.href = 'mailto:ocelotenterprises7@gmail.com?subject=New Signage Inquiry&body=' + encodeURIComponent(formData);
+  }
