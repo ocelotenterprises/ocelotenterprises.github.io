@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--  created with sitemap generator https://octopus.do  -->
+
+    <url>
+        <loc>https://ocelotenterprises.com.ng</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/about</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/index</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/projects</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/services</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/signage-detail</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/printing-detail</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ocelotenterprises.com.ng/contact</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>
